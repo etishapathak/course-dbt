@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: addresses
+    description: Source model for addresses table 
+  - name: events
+    description: Source model for events table 
+  - name: order_items
+    description: Source model for order_items table 
+  - name: orders
+    description: Source model for orders table 
+  - name: products
+    description: Source model for products table 
+  - name: promos
+    description: Source model for promos table 
+  - name: users
+    description: Source model for users table

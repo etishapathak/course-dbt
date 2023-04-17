@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: postgres
+    database: raw
+    schema: public
+    description: This is a replica of the Postgres database
+    tables:
+      - name: orders
+      - name: events
+      - name: users
+      - name: addresses
+      - name: products
+      - name: order_items
+      - name: promos
