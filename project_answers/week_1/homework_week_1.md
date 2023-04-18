@@ -55,7 +55,7 @@ select * from group_by_purchase
 
 
 
-## On average, how many unique sessions do we have per hour? --39.46
+## On average, how many unique sessions do we have per hour? --39
 ```
 with unique_sessions_per_hour as(
 select 
