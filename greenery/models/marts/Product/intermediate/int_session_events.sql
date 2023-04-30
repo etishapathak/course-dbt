@@ -10,7 +10,7 @@ with events as(
 
 ,page_events as(
 select 
- user_id as event_user_guid
+  user_id as event_user_guid
  ,session_id as event_session_guid
  ,sum(case when event_type ='add_to_cart' then 1 else 0 end) as add_to_carts
  ,sum(case when event_type ='page_view' then 1 else 0 end) as page_views
@@ -20,6 +20,5 @@ select
  ,max(created_at) as last_user_session_utc
  from events
  group by 1,2
- order by 1
 )
 select * from page_events
